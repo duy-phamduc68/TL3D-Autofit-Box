@@ -1,0 +1,9 @@
+# Core UI Framework
+PyQt5>=5.15.0
+
+# Numerical & Computer Vision
+numpy>=1.21.0
+opencv-python>=4.5.0
+
+# Aesthetics
+pyqtdarktheme>=2.1.0

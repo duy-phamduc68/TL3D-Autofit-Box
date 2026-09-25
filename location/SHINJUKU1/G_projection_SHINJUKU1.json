@@ -1,0 +1,234 @@
+{
+    "meta": {
+        "location_code": "SHINJUKU1",
+        "timestamp": "2025-12-27T00:23:19"
+    },
+    "inputs": {
+        "cctv_path": "cctv_SHINJUKU1.png",
+        "sat_path": "sat_SHINJUKU1.png",
+        "layout_path": "layout_SHINJUKU1.svg",
+        "roi_path": "roi_SHINJUKU1.png",
+        "note": "Input paths are relative to this json file"
+    },
+    "undistort": {
+        "resolution": [
+            1920,
+            1080
+        ],
+        "K": [
+            [
+                1920.0,
+                0.0,
+                960.0
+            ],
+            [
+                0.0,
+                1920.0,
+                540.0
+            ],
+            [
+                0.0,
+                0.0,
+                1.0
+            ]
+        ],
+        "D": [
+            -0.6096,
+            0.1439999999999999,
+            0.0,
+            -0.01,
+            0.0
+        ],
+        "model": "radial_tangential"
+    },
+    "homography": {
+        "H": [
+            [
+                1.6513258197139036,
+                6.15326570906998,
+                -1185.4113428252817
+            ],
+            [
+                0.009802792282682249,
+                7.705225757149477,
+                -242.1512852450137
+            ],
+            [
+                0.0007914155689964696,
+                0.008930205943881343,
+                1.0
+            ]
+        ],
+        "fov_polygon": [
+            [
+                -796.0,
+                -219.0
+            ],
+            [
+                -795.0,
+                -11.0
+            ],
+            [
+                515.0,
+                758.0
+            ],
+            [
+                709.0,
+                665.0
+            ],
+            [
+                787.0,
+                -92.0
+            ]
+        ],
+        "anchors_list": [
+            {
+                "id": 0,
+                "name": "ZebraMark1",
+                "coords_cctv": [
+                    537.9462445526282,
+                    848.0492462383407
+                ],
+                "coords_sat": [
+                    546.7260380540984,
+                    699.3810212345173
+                ]
+            },
+            {
+                "id": 1,
+                "name": "ZebraMark2",
+                "coords_cctv": [
+                    1227.6478984239575,
+                    278.67607294223836
+                ],
+                "coords_sat": [
+                    573.1204861842501,
+                    429.93053463286736
+                ]
+            },
+            {
+                "id": 2,
+                "name": "ZebraMark3",
+                "coords_cctv": [
+                    1097.7307251733525,
+                    203.9496791251279
+                ],
+                "coords_sat": [
+                    510.4185261338451,
+                    363.55414729926406
+                ]
+            },
+            {
+                "id": 3,
+                "name": "ZebraMark4",
+                "coords_cctv": [
+                    881.9549270267221,
+                    177.3292353277133
+                ],
+                "coords_sat": [
+                    414.0493443199024,
+                    343.82946096307666
+                ]
+            },
+            {
+                "id": 4,
+                "name": "ZebraMark5",
+                "coords_cctv": [
+                    733.1860193359167,
+                    194.42206391344632
+                ],
+                "coords_sat": [
+                    369.34475164510127,
+                    382.0249071469358
+                ]
+            },
+            {
+                "id": 5,
+                "name": "ZebraMark6",
+                "coords_cctv": [
+                    176.28673541397012,
+                    406.15796639433916
+                ],
+                "coords_sat": [
+                    336.37634734033134,
+                    605.8296517543141
+                ]
+            },
+            {
+                "id": 6,
+                "name": "ZebraMark8",
+                "coords_cctv": [
+                    125.42577087222519,
+                    877.5731695767704
+                ],
+                "coords_sat": [
+                    495.0544043841208,
+                    730.1656209806349
+                ]
+            }
+        ]
+    },
+    "parallax": {
+        "x_cam_coords_sat": 663.5833129882812,
+        "y_cam_coords_sat": 801.8549194335938,
+        "z_cam_meters": 16.90302085876465,
+        "scale": {
+            "measured_px": 270.7401551708967,
+            "real_m": 32.0,
+            "reference_anchors": [
+                "ZebraMark1",
+                "ZebraMark2"
+            ]
+        },
+        "px_per_meter": 8.460629849090521
+    },
+    "use_svg": true,
+    "layout_svg": {
+        "A": [
+            [
+                0.22491691786023313,
+                -0.0002983427742208181,
+                -0.6031453304219174
+            ],
+            [
+                -0.0006511975581799294,
+                0.22415942077723333,
+                1.7264646234119623
+            ]
+        ],
+        "association_pairs": [
+            {
+                "svg_id": "ZebraMark1",
+                "sat_id": "ZebraMark1"
+            },
+            {
+                "svg_id": "ZebraMark2",
+                "sat_id": "ZebraMark2"
+            },
+            {
+                "svg_id": "ZebraMark3",
+                "sat_id": "ZebraMark3"
+            },
+            {
+                "svg_id": "ZebraMark4",
+                "sat_id": "ZebraMark4"
+            },
+            {
+                "svg_id": "ZebraMark5",
+                "sat_id": "ZebraMark5"
+            },
+            {
+                "svg_id": "ZebraMark6",
+                "sat_id": "ZebraMark6"
+            },
+            {
+                "svg_id": "ZebraMark8",
+                "sat_id": "ZebraMark8"
+            }
+        ]
+    },
+    "use_roi": true,
+    "roi_method": "partial",
+    "ref_method": "center_box",
+    "proj_method": "down_h_2"
+}
